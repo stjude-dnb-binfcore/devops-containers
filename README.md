@@ -78,7 +78,7 @@ User can also run analyses via Rstudio OnDemand after executing the container:
 bash run-rstudio-sc-rna-seq.sh
 ```
 
-The `run-rstudio.sh` is running at `IP_ADDR:PORT`. When RStudio launches, please click "Session" -> "Restart R" (at the RStudio web session). Again, the user can navigate to their module of interest and explore/run their analyses.
+The `run-rstudio-sc-rna-seq.sh` is running at `IP_ADDR:PORT`. When RStudio launches, please click "Session" -> "Restart R" (at the RStudio web session). Again, the user can navigate to their module of interest and explore/run their analyses.
 
 
 
