@@ -1,5 +1,5 @@
 <p align="center";">
-  <img src="figures/imgDNB-BINF-Core-logo.png" alt="DNB-BINF-Core logo" width="560px" />
+  <img src="figures/img/DNB-BINF-Core-logo.png" alt="DNB-BINF-Core logo" width="560px" />
 </p>
 <p align="center";">
   <a href="https://www.repostatus.org/#active">
