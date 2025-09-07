@@ -14,9 +14,15 @@
 
 # DevOps Containers
 
-This repository contains a collection of **reusable container images** designed to support various stages of data processing pipelines, particularly in the context of single-cell analysis, i.e. scRNA-seq (scATAC-seq is currently under construction, stay tuned!). These containers are built to be **modular, consistent, and reproducible**, ensuring reliable execution across different environments.
+This repository hosts a collection of **reusable container images** designed to support various stages of data processing pipelines, with a focus on **single-cell analysis** workflows such as scRNA-seq. Support for additional modalities like **scATAC-seq** is currently in development — stay tuned!
 
-While they are primarily used within automated pipelines (see [sc-rna-seq-snap](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap); [sc-rna-seq-snap-10x-Flex](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap-10x-Flex); [sc-epigenie](https://github.com/stjude-dnb-binfcore/sc-epigenie)), each container can also be **independently utilized** in other projects or workflows, making them versatile tools for a wide range of bioinformatics and DevOps tasks.
+These containers are built to be **modular**, **consistent**, and **reproducible**, ensuring reliable execution across a wide range of environments, including local development, cloud platforms, and CI/CD systems.
+
+Although primarily used within automated pipelines — such as  
+[sc-rna-seq-snap](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap),  
+[sc-rna-seq-snap-10x-Flex](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap-10x-Flex), and  
+[sc-epigenie](https://github.com/stjude-dnb-binfcore/sc-epigenie) —  
+each container is **self-contained and portable**, making it easy to use them independently in other projects or custom workflows. This flexibility makes the containers valuable tools for both **bioinformatics** and **DevOps** tasks where reproducibility and scalability are key.
 
 
 # 🔧 Usage for a scRNA-seq project
