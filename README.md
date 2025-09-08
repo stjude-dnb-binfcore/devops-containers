@@ -107,8 +107,8 @@ The `run-rstudio-sc-rna-seq.sh` is running at `IP_ADDR:PORT`. When RStudio launc
 ├── LICENSE
 ├── README.md
 ├── run-container
-├── run-rstudio.sh
-├── run-terminal.sh
+├── run-rstudio-sc-rna-seq.sh
+├── run-terminal-sc-rna-seq.sh
 └── SECURITY.md
 ```
 
