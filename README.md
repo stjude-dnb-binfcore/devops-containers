@@ -19,9 +19,9 @@ This repository hosts a collection of **reusable container images** designed to 
 These containers are built to be **modular**, **consistent**, and **reproducible**, ensuring reliable execution across a wide range of environments, including local development, cloud platforms, and CI/CD systems.
 
 Although primarily used within automated pipelines — such as  
- - [sc-rna-seq-snap](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap),  
- - [sc-rna-seq-snap-10x-Flex](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap-10x-Flex), and  
- - [sc-epigenie](https://github.com/stjude-dnb-binfcore/sc-epigenie) —  
+ - [sc-rna-seq-snap](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap)
+ - [sc-rna-seq-snap-10x-Flex](https://github.com/stjude-dnb-binfcore/sc-rna-seq-snap-10x-Flex)
+ - [sc-epigenie](https://github.com/stjude-dnb-binfcore/sc-epigenie) 
 
 each container is **self-contained and portable**, making it easy to use them independently in other projects or custom workflows. This flexibility makes the containers valuable tools for both **bioinformatics** and **DevOps** tasks where reproducibility and scalability are key.
 
@@ -37,7 +37,7 @@ each container is **self-contained and portable**, making it easy to use them in
 
 
 ## Table of Contents
-1. [Usage for a scRNA-seq project](#usage-for-a-scRNA-seq-project)
+1. [Using the Container for a scRNA-seq project](##using-the-container-for-a-scrna-seq-project)
 2. [Accessing the Container](#accessing-the-Container)
 3. [Running the Container on HPC](#running-the-container-on-hpc)
    - [1. Start an Interactive Session](#1-start-an-interactive-session)
@@ -50,7 +50,7 @@ each container is **self-contained and portable**, making it easy to use them in
 
 
 
-## 🔧 Usage for a scRNA-seq project
+## 🔧 Using the Container for a scRNA-seq project
 
 We provide a Dockerfile and Definition file that include all tools, packages, and dependencies necessary for running a scRNA-seq project analysis modules. These are customized for `Rstudio/R v4.4.0` and `Seurat v4.4.0`.
 
