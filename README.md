@@ -37,7 +37,7 @@ each container is **self-contained and portable**, making it easy to use them in
 
 
 ## Table of Contents
-1. [Using the Container for a scRNA-seq project](##using-the-container-for-a-scrna-seq-project)
+1. [Using the Container for a scRNA-seq project](#using-the-container-for-a-scrna-seq-project)
 2. [Accessing the Container](#accessing-the-Container)
 3. [Running the Container on HPC](#running-the-container-on-hpc)
    - [1. Start an Interactive Session](#1-start-an-interactive-session)
