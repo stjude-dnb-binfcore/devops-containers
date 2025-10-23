@@ -20,7 +20,6 @@ mkdir -p reports
 ################################################################################################################
 # Run other dependencies
 python3 --version
-#cellranger --version
 fastqc --version
 multiqc --version
 pandoc --version
