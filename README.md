@@ -12,7 +12,8 @@
 
 
 
-# DevOps Containers, and mor
+# DevOps Containers
+
 This repository hosts a collection of **reusable container images** designed to support various stages of data processing pipelines, with a focus on **single-cell genomics analysis** workflows, and more specifically for **scRNA-seq** and **scATAC-seq**. 
 
 These containers are built to be **modular**, **consistent**, and **reproducible**, ensuring reliable execution across a wide range of environments, including local development, cloud platforms, and CI/CD systems.
