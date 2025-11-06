@@ -5,9 +5,9 @@ set -o pipefail
 
 ########################################################################
 pwd
-echo $PATH
-echo $LD_LIBRARY_PATH
-which python
+#echo $PATH
+#echo $LD_LIBRARY_PATH
+#which python
 
 ########################################################################
 # set up running directory
@@ -20,11 +20,12 @@ mkdir -p reports
 ################################################################################################################
 # Run other dependencies
 python3 --version
-cellranger --version
 fastqc --version
 multiqc --version
 pandoc --version
 tex --version
+#macs3 --version
+macs2 --version
 
 # Run R script with all R packages
 Rscript -e "rmarkdown::render('01-run-test-packages.Rmd', clean = TRUE,
