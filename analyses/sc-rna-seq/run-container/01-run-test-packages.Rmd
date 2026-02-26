@@ -91,7 +91,6 @@ suppressPackageStartupMessages({
   library(SeuratObject)
   library(SeuratWrappers)
   library(shiny)
-  library(Signac)
   library(SoupX)
   library(stringr)
   library(tidytext)
@@ -103,6 +102,12 @@ suppressPackageStartupMessages({
   library(shinyhelper)
   library(DT)
   library(ggdendro)
+  
+  # Container update February 18, 2026
+  library(clusterProfiler)
+  library(enrichplot)
+  library(org.Hs.eg.db)
+  library(org.Mm.eg.db)
 })
 ```
 
