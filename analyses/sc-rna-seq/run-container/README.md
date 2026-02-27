@@ -5,10 +5,6 @@ We provide a Docker image that includes all tools, packages, and system dependen
 Please note that Cell Ranger is not included in this container and must be installed and run separately, as required by the workflow.
 
 
-## Add your own code for sc-rna-seq
-
-User can add their own code to their module of interest here: `./devops-containers/analyses/sc-rna-seq/<my_project>`.
-
 ## Table of Contents
 
 1. [Running the Container on HPC](#running-the-container-on-hpc)
@@ -20,7 +16,7 @@ User can add their own code to their module of interest here: `./devops-containe
      - [b. Running from RStudio](#c-running-from-rstudio)
 
 2. [Running the Container Outside HPC (Docker)](#running-the-container-outside-hpc-docker)
-
+3. [Add your own code for sc-atac-seq](#add-your-own-code-for-sc-atac-seq)
 
 ## 🔧 Using the Container for a scRNA-seq project
 
@@ -109,6 +105,11 @@ Navigate to your module of interest and run the analysis:
 cd ./sc-rna-seq-snap/analyses/upstream-analysis
 bash run-upstream-analysis.sh
 ```
+
+
+## Add your own code for sc-rna-seq
+
+User can add their own code to their module of interest here: `./devops-containers/analyses/sc-rna-seq/<my_project>`.
 
 
 ## Authors

@@ -118,7 +118,10 @@ suppressPackageStartupMessages({
   library(org.Mm.eg.db) # Mouse gene annotation (use org.Hs.eg.db for human)
   
   # Motif analysis with Signac
+  library(JASPAR2018)
   library(JASPAR2020)
+  library(JASPAR2022)
+  library(JASPAR2024)
   library(TFBSTools)
   library(BSgenome.Mmusculus.UCSC.mm10)
   
@@ -131,4 +134,10 @@ suppressPackageStartupMessages({
   library(biovizBase)
   library(clusterProfiler)
   ####################################################
+  
+  # `motif-footprint-analysis` module
+  library(BSgenome.Mmusculus.UCSC.mm39)
+  library(chromVAR)
+  library(ggseqlogo)
 })
+

@@ -1,11 +1,22 @@
 # Running the Container for scATAC-seq project analysis Workflow
 
-We provide a Dockerfile file that include all tools, packages, and dependencies necessary for running **sc-atac-seq** analysis. These are customized for `Rstudio/R v4.4.0`, `Seurat v4.4.0`, and `Signac v1.16.0`.
+We provide a Docker image that includes all tools, packages, and system dependencies required to run the **sc-atac-seq** analysis. The container is built and validated for `Rstudio/R v4.4.0`, `Seurat v4.4.0` and `Signac v1.16.0` to ensure reproducibility across environments.
+
+Please note that Cell Ranger is not included in this container and must be installed and run separately, as required by the workflow.
 
 
-## Add your own code for sc-atac-seq
+## Table of Contents
 
-User can add their own code to their module of interest here: `./devops-containers/analyses/sc-atac-seq/<my_project>`.
+1. [Running the Container on HPC](#running-the-container-on-hpc)
+   - [1. Start an Interactive Session](#1-start-an-interactive-session)
+   - [2. Load the Singularity Module](#2-load-the-singularity-module)
+   - [3. Pull the Singularity Container](#3-pull-the-singularity-container)
+   - [4. Start the Singularity Container](#4-start-the-singularity-container)
+     - [a. Running from the Terminal](#b-running-from-the-terminal)
+     - [b. Running from RStudio](#c-running-from-rstudio)
+
+2. [Running the Container Outside HPC (Docker)](#running-the-container-outside-hpc-docker)
+3. [Add your own code for sc-atac-seq](#add-your-own-code-for-sc-atac-seq)
 
 
 ## 🔧 Using the Container for a scATAC-seq project
@@ -66,6 +77,38 @@ bash run-rstudio.sh
 ```
 
 The `run-rstudio.sh` is running at `IP_ADDR:PORT`. When RStudio launches, please click "Session" -> "Restart R" (at the RStudio web session). Again, the user can navigate to their module of interest and explore/run their analyses.
+
+## Running the Container Outside HPC (Docker)
+
+1. Pull the Docker Container from the `sc-rna-seq-snap` root_dir:
+
+```
+docker pull docker://achroni/rstudio_4.4.0_seurat_4.4.0:latest
+```
+
+2. Start and Run the Docker Container from the terminal:
+
+```
+docker run --platform linux/amd64 --name review -d -e PASSWORD=ANYTHING -p 8787:8787 -v $PWD:/home/rstudio/sc-rna-seq-snap docker://achroni/rstudio_4.4.0_seurat_4.4.0:latest
+```
+
+Start the container and open a terminal:
+
+```
+docker container start review
+docker exec -ti review bash
+```
+
+Navigate to your module of interest and run the analysis:
+
+```
+cd ./sc-rna-seq-snap/analyses/upstream-analysis
+bash run-upstream-analysis.sh
+```
+
+## Add your own code for sc-atac-seq
+
+User can add their own code to their module of interest here: `./devops-containers/analyses/sc-atac-seq/<my_project>`.
 
 
 
