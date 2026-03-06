@@ -12,11 +12,11 @@ Please note that Cell Ranger is not included in this container and must be insta
    - [2. Load the Singularity Module](#2-load-the-singularity-module)
    - [3. Pull the Singularity Container](#3-pull-the-singularity-container)
    - [4. Start the Singularity Container](#4-start-the-singularity-container)
-     - [a. Running from the Terminal](#b-running-from-the-terminal)
-     - [b. Running from RStudio](#c-running-from-rstudio)
+     - [a. Running from the Terminal](#a-running-from-the-terminal)
+     - [b. Running from RStudio](#b-running-from-rstudio)
 
 2. [Running the Container Outside HPC (Docker)](#running-the-container-outside-hpc-docker)
-3. [Add your own code for sc-atac-seq](#add-your-own-code-for-sc-atac-seq)
+3. [Add your own code for sc-rna-seq](#add-your-own-code-for-sc-rna-seq)
 
 ## 🔧 Using the Container for a scRNA-seq project
 
@@ -80,7 +80,7 @@ The `run-rstudio.sh` is running at `IP_ADDR:PORT`. When RStudio launches, please
 
 ## Running the Container Outside HPC (Docker)
 
-1. Pull the Docker Container from the `sc-rna-seq-snap` root_dir:
+1. Pull the Docker Container from the `devops-containers` root_dir:
 
 ```
 docker pull docker://achroni/rstudio_4.4.0_seurat_4.4.0:latest
@@ -89,7 +89,7 @@ docker pull docker://achroni/rstudio_4.4.0_seurat_4.4.0:latest
 2. Start and Run the Docker Container from the terminal:
 
 ```
-docker run --platform linux/amd64 --name review -d -e PASSWORD=ANYTHING -p 8787:8787 -v $PWD:/home/rstudio/sc-rna-seq-snap docker://achroni/rstudio_4.4.0_seurat_4.4.0:latest
+docker run --platform linux/amd64 --name review -d -e PASSWORD=ANYTHING -p 8787:8787 -v $PWD:/home/rstudio/devops-containers docker://achroni/rstudio_4.4.0_seurat_4.4.0:latest
 ```
 
 Start the container and open a terminal:
@@ -102,8 +102,8 @@ docker exec -ti review bash
 Navigate to your module of interest and run the analysis:
 
 ```
-cd ./sc-rna-seq-snap/analyses/upstream-analysis
-bash run-upstream-analysis.sh
+cd ./devops-containers/analyses/sc-rna-seq/myproject
+bash my_code.sh
 ```
 
 
