@@ -99,4 +99,10 @@ suppressPackageStartupMessages({
   library(celldex)
   library(infercnv)
   library(numbat)
+  
+  # Container update February 18, 2026
+  library(clusterProfiler)
+  library(enrichplot)
+  library(org.Hs.eg.db)
+  library(org.Mm.eg.db)
 })
